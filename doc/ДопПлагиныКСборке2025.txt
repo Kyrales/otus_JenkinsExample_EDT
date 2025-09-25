@@ -1,0 +1,121 @@
+Дополнительные плагины Jenkins к ВМ (VMware Otus 2025)
+File Operations
+Pipeline Utility Steps
+Allure
+SonarQube Scanner
+xUnit
+DTKit 2 AP
+
+Установить:
+OneScript-1.9.3-x64.exe
+
+
+Общий перечень
+Pipeline: Groovy Libraries
+    bouncycastle API
+    Instance Identity
+    JavaBeans Activation Framework (JAF) API
+    JavaMail API
+    Structs
+    Pipeline: Step API
+    Pipeline: SCM Step
+    Folders
+    SCM API
+    Script Security
+    Variant
+    Pipeline: API
+    Pipeline: Supporting APIs
+    Pipeline: Groovy
+ GIT
+    Credentials
+    Plain Credentials
+    Trilead API
+    SSH Credentials
+    Credentials Binding
+    Mina SSHD API :: Common
+    Mina SSHD API :: Core
+    Apache HttpComponents Client 4.x API
+    Git client
+    Jakarta Activation API
+    Jakarta Mail API
+    Display URL API
+    Mailer
+ HTTP Request
+   Durable Task
+   Pipeline: Nodes and Processes
+   SSH server
+   Pipeline: Basic Steps
+ Pipeline Utility Steps
+   SnakeYAML API
+   commons-lang3 v3.x Jenkins API
+   commons-text API
+ JUnit
+ JAXB
+ Jackson 2 API
+ Plugin Utilities API
+ Font Awesome API
+ Bootstrap 5 API
+ JQuery3 API
+ ECharts API
+ Checks API
+ xUnit
+ DTKit 2 API
+ Pipeline: Multibranch
+   Branch API
+   Pipeline: Job
+ Allure
+   Oracle Java SE Development Kit Installer
+   Command Agent Launcher
+   Matrix Project
+ SonarQube Scanner
+ GitLab Branch Source
+   Jersey 2 API
+  GitLab API
+  Handy Uri Templates 2.x API
+ Pipeline: Stage View(может и не нужен в новой версии дженкинса вроде из коробки показывает)
+  Pipeline: Input Step
+  Pipeline: Stage Step
+  Pipeline Graph Analysis
+  Pipeline: REST API
+ Pipeline
+ Pipeline: Milestone Step
+ Pipeline: Build Step
+ Pipeline: Model API
+ Pipeline: Declarative Extension Points API
+ Pipeline: Stage Tags Metadata
+ Pipeline: Declarative
+ Timestamper
+   OWASP Markup Formatter
+ Blue Ocean (вроде тоже интерфейсный плагин, но почему-то в либе через его классы сделана отправка уведомлений...)
+  Design Language
+  Blue Ocean Core JS
+  OkHttp
+  GitHub API
+  Java JSON Web Token (JJWT)
+  Token Macro
+  GitHub
+  GitHub Branch Source
+  Common API for Blue Ocean
+  REST API for Blue Ocean
+  Pub-Sub "light" Bus
+  Pipeline SCM API for Blue Ocean
+  HTML Publisher
+  Web for Blue Ocean
+  JWT for Blue Ocean
+  Favorite
+  REST Implementation for Blue Ocean
+  Pipeline implementation for Blue Ocean
+  GitHub Pipeline for Blue Ocean
+  Git Pipeline for Blue Ocean
+  Config API for Blue Ocean
+  Bitbucket Branch Source
+  Bitbucket Pipeline for Blue Ocean
+  Dashboard for Blue Ocean
+  Personalization for Blue Ocean
+  Display URL for Blue Ocean
+  Server Sent Events (SSE) Gateway
+  Events API for Blue Ocean
+  Blue Ocean Pipeline Editor
+  i18n for Blue Ocean
+
+File Operations (c 24.01.2025)

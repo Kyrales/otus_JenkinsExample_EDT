@@ -1,0 +1,4 @@
+[Jenkins OTUS]( https://github.com/Kyrales/otus_JenkinsExample ) - ссылка на ГитХаб сборки
+[GitHub - Kyrales/jenkins-lib: Jenkins shared library для 1С:Предприятие 8]( https://github.com/Kyrales/jenkins-lib ) ветка otus - форк Jenkins-Lib
+[GitHub - Kyrales/vanessa-usher_mod]( https://github.com/Kyrales/vanessa-usher_mod ) ветка my_dev - форк модифицированный Vanessa Usher
+

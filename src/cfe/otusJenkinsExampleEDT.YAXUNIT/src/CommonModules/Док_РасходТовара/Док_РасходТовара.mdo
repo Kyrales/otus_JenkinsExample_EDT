@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6e9b20a-8144-499f-9aa6-679a34728a8a">
+  <name>Док_РасходТовара</name>
+  <synonym>
+    <key>ru</key>
+    <value>Док расход товара</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

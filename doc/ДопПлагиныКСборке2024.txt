@@ -1,0 +1,36 @@
+Дополнительные плагины Jenkins к текущей ВМ (VM Otus 2024)
+1. http_request https://plugins.jenkins.io/http_request/
+2. File Operations
+3. Pipeline Utility Steps
+4. Blue Ocean - набор разных плагинов:
+  
+  Design Language
+  Blue Ocean Core JS
+  OkHttp
+  GitHub API
+  Java JSON Web Token (JJWT)
+  Token Macro
+  GitHub
+  GitHub Branch Source
+  Common API for Blue Ocean
+  REST API for Blue Ocean
+  Pub-Sub "light" Bus
+  Pipeline SCM API for Blue Ocean
+  HTML Publisher
+  Web for Blue Ocean
+  JWT for Blue Ocean
+  Favorite
+  REST Implementation for Blue Ocean
+  Pipeline implementation for Blue Ocean
+  GitHub Pipeline for Blue Ocean
+  Git Pipeline for Blue Ocean
+  Config API for Blue Ocean
+  Bitbucket Branch Source
+  Bitbucket Pipeline for Blue Ocean
+  Dashboard for Blue Ocean
+  Personalization for Blue Ocean
+  Display URL for Blue Ocean
+  Server Sent Events (SSE) Gateway
+  Events API for Blue Ocean
+  Blue Ocean Pipeline Editor
+  i18n for Blue Ocean
