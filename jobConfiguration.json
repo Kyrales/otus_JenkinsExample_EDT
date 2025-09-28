@@ -105,7 +105,7 @@
     "dbgsPort": 1551
   },
   "resultsTransform": {
-    "transformer": "edt-ripper",
+    "transformer": "stebi",
     "genericIssueFormat": "Generic_Issue_10_3",
     "removeSupport": true,
     "supportLevel": 0
