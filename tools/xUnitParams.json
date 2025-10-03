@@ -77,7 +77,7 @@
 		"Используется": false
 	},
 	"SmokeCommonModules": {
-		"Используется": true,
+		"Используется": false,
 		"Subsystems" : [
 			"Предприятие"
 		],
