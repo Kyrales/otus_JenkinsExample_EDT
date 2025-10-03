@@ -93,8 +93,8 @@
   "smoke": {
     "vrunnerSettings": "./tools/vrunner.json",
     "xddConfigPath": "./tools/xUnitParams.json",
-    "publishToAllureReport": false,
-    "publishToJUnitReport": true
+    "publishToAllureReport": true,
+    "publishToJUnitReport": false
   },
   "yaxunit": {
     "vrunnerSettings": "./tools/vrunner.json",
