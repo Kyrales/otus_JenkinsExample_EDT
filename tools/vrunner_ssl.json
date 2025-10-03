@@ -12,5 +12,8 @@
   "vanessa": {
     "--vanessasettings": "./tools/VAParams.json",
     "--pathvanessa": "C:/tools/vanessa-automation-single.epf"
+  },
+  "xunit": {
+    "testsPath": "./tests"
   }
 }
