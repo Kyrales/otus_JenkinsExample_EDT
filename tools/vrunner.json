@@ -3,7 +3,8 @@
   "default": {
     "--workspace": ".",
     "--additional": "/DisplayAllFunctions /Lru  /iTaxi /debug -http -attach /debuggerURL http://localhost:1550",
-    "--ordinaryapp": "-1"
+    "--ordinaryapp": "-1",
+    "--db-user": "Администратор"
   },
   "run": {
     "--command": "ЗапуститьОбновлениеИнформационнойБазы;ЗавершитьРаботуСистемы;",
