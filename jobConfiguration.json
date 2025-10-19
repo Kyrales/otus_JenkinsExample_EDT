@@ -53,6 +53,12 @@
         "stages": [
           "yaxunit"
         ]
+      },
+      {
+        "initMethod": "fromSource",
+        "name": "Колонтитулы",
+        "path": "./src/cfe/otusJenkinsExampleEDT.Колонтитулы",
+        "stages": []
       }
     ]
   },
