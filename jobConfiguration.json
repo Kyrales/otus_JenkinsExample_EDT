@@ -58,7 +58,9 @@
         "initMethod": "fromSource",
         "name": "Колонтитулы",
         "path": "./src/cfe/otusJenkinsExampleEDT.Колонтитулы",
-        "stages": []
+        "stages": [
+          "bdd"
+        ]
       }
     ]
   },
