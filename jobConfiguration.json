@@ -41,7 +41,7 @@
   },
   "initInfobase": {
     "initMethod": "fromSource",
-    "runMigration": true,
+    "runMigration": false,
     "additionalInitializationSteps": [],
     "templateDBPath": "e:/1C/build/otus_demo/1Cv8.1CD",
     "vrunnerSettings": "./tools/vrunner.json",
