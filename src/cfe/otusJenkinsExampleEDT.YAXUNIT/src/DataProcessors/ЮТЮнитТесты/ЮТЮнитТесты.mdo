@@ -60,7 +60,6 @@
       <value>Запуск тестирования</value>
     </synonym>
     <group>NavigationPanelImportant</group>
-    <commandParameterType/>
     <representation>PictureAndText</representation>
     <picture xsi:type="core:PictureRef">
       <picture>CommonPicture.ЮТЗапустить</picture>
@@ -73,7 +72,6 @@
       <value>Сформировать настройки тестирования</value>
     </synonym>
     <group>NavigationPanelOrdinary</group>
-    <commandParameterType/>
     <representation>Auto</representation>
   </commands>
 </mdclass:DataProcessor>

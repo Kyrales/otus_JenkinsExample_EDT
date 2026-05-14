@@ -736,6 +736,7 @@
         <name>ДеревоТестовПриАктивизацииСтроки</name>
       </handlers>
       <searchStringAddition>
+        <enabled>false</enabled>
         <name>ДеревоТестовСтрокаПоиска</name>
         <id>33</id>
         <extendedTooltip>
@@ -759,6 +760,7 @@
         </extInfo>
       </searchStringAddition>
       <viewStatusAddition>
+        <enabled>false</enabled>
         <name>ДеревоТестовСостояниеПросмотра</name>
         <id>39</id>
         <extendedTooltip>
@@ -783,6 +785,7 @@
         </extInfo>
       </viewStatusAddition>
       <searchControlAddition>
+        <enabled>false</enabled>
         <name>ДеревоТестовУправлениеПоиском</name>
         <id>36</id>
         <extendedTooltip>
@@ -871,7 +874,7 @@
       <rowsPicture xsi:type="core:PictureRef">
         <picture>CommonPicture.ЮТЭлементыТестов</picture>
       </rowsPicture>
-      <searchStringLocation>None</searchStringLocation>
+      <searchStringLocation>Top</searchStringLocation>
       <searchControlLocation>None</searchControlLocation>
     </items>
     <items xsi:type="form:FormGroup">
@@ -1061,6 +1064,7 @@
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
+          <enabled>false</enabled>
           <name>ДеревоТестовОшибкиСтрокаПоиска</name>
           <id>63</id>
           <extendedTooltip>
@@ -1084,6 +1088,7 @@
           </extInfo>
         </searchStringAddition>
         <viewStatusAddition>
+          <enabled>false</enabled>
           <name>ДеревоТестовОшибкиСостояниеПросмотра</name>
           <id>69</id>
           <extendedTooltip>
@@ -1108,6 +1113,7 @@
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
+          <enabled>false</enabled>
           <name>ДеревоТестовОшибкиУправлениеПоиском</name>
           <id>66</id>
           <extendedTooltip>

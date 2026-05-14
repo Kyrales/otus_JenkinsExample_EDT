@@ -3,9 +3,8 @@
   <name>ЮТЗапросыСлужебныйВызовСервера</name>
   <synonym>
     <key>ru</key>
-    <value>Запросы вызов сервера</value>
+    <value>Запросы служебный вызов сервера</value>
   </synonym>
   <server>true</server>
-  <clientOrdinaryApplication>true</clientOrdinaryApplication>
   <serverCall>true</serverCall>
 </mdclass:CommonModule>

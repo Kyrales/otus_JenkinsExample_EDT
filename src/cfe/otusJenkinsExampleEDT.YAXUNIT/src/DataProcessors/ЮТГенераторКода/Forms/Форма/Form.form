@@ -1335,6 +1335,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </autoCommandBar>
           <searchStringAddition>
+            <enabled>false</enabled>
             <name>ИменаРегистровСтрокаПоиска</name>
             <id>168</id>
             <extendedTooltip>
@@ -1358,6 +1359,7 @@
             </extInfo>
           </searchStringAddition>
           <viewStatusAddition>
+            <enabled>false</enabled>
             <name>ИменаРегистровСостояниеПросмотра</name>
             <id>174</id>
             <extendedTooltip>
@@ -1382,6 +1384,7 @@
             </extInfo>
           </viewStatusAddition>
           <searchControlAddition>
+            <enabled>false</enabled>
             <name>ИменаРегистровУправлениеПоиском</name>
             <id>171</id>
             <extendedTooltip>
