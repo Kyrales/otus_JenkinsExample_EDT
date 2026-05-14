@@ -886,7 +886,7 @@
       <key>ru</key>
       <value>Объект</value>
     </title>
-    <id>1</id>
+    <id>4</id>
     <valueType>
       <types>ConstantsSet</types>
     </valueType>
@@ -929,6 +929,12 @@
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>Объект.ЛогинСервисаПередачиPushУведомлений</segments>
     </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.РаботаСТорговымОборудованием</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.УчетПоСкладам</segments>
+    </notDefaultUseAlwaysAttributes>
     <main>true</main>
   </attributes>
   <attributes>
@@ -937,7 +943,7 @@
       <key>ru</key>
       <value>Адрес сертификата</value>
     </title>
-    <id>2</id>
+    <id>5</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

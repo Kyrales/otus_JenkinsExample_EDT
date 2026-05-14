@@ -141,7 +141,7 @@
   </items>
   <items xsi:type="form:FormField">
     <name>Диаграмма</name>
-    <id>1</id>
+    <id>6</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -151,13 +151,9 @@
       <segments>Диаграмма</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
-    <handlers>
-      <event>OnValueEdit</event>
-      <name>ДиаграммаПриРедактированииЗначения</name>
-    </handlers>
     <extendedTooltip>
       <name>ДиаграммаРасширеннаяПодсказка</name>
-      <id>3</id>
+      <id>20</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -167,7 +163,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ДиаграммаКонтекстноеМеню</name>
-      <id>2</id>
+      <id>19</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>ChartField</type>
@@ -176,6 +172,10 @@
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:ChartFieldExtInfo">
+      <handlers>
+        <event>OnValueEdit</event>
+        <name>ДиаграммаПриРедактированииЗначения</name>
+      </handlers>
       <width>50</width>
       <autoMaxWidth>true</autoMaxWidth>
       <height>10</height>
@@ -322,7 +322,7 @@
       <key>ru</key>
       <value>Объект</value>
     </title>
-    <id>1</id>
+    <id>18</id>
     <valueType>
       <types>DataProcessorObject.РедактированиеЦен</types>
     </valueType>

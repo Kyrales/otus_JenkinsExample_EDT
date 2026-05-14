@@ -13,12 +13,12 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="2a793120-c7a1-422e-b404-b0f78b87b1b5"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="c7b02cf7-645c-471f-a7d9-81b0d59ca319"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="5a2019b4-0318-45ff-bb33-434c4d019855"/>
-  <configurationExtensionCompatibilityMode>8.3.25</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Фирма &quot;1С&quot;</vendor>
-  <version>1.0.39.2</version>
+  <version>1.0.41.3</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -172,7 +172,7 @@
   <splash/>
   <copyright>
     <key>ru</key>
-    <value>Copyright © ООО &quot;1C-Софт&quot;, 2023</value>
+    <value>Copyright © ООО &quot;1C-Софт&quot;, 2024</value>
   </copyright>
   <vendorInformationAddress>
     <key>ru</key>
@@ -186,7 +186,7 @@
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <compatibilityMode>8.3.24</compatibilityMode>
+  <compatibilityMode>8.3.27</compatibilityMode>
   <defaultConstantsForm>CommonForm.ОбщиеНастройки</defaultConstantsForm>
   <languages uuid="d5fb342e-0c73-4410-8517-8ce7ee20e8bd">
     <name>Русский</name>

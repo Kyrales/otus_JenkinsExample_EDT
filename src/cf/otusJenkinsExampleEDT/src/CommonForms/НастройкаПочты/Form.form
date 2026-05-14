@@ -983,6 +983,12 @@
     <edit>
       <common>true</common>
     </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.РаботаСТорговымОборудованием</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.УчетПоСкладам</segments>
+    </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
   </attributes>

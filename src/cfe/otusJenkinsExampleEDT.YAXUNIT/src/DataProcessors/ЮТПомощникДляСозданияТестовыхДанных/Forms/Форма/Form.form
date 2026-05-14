@@ -1080,7 +1080,7 @@
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
-  <allowFormCustomize>false</allowFormCustomize>
+  <allowFormCustomize>true</allowFormCustomize>
   <enabled>true</enabled>
   <showTitle>true</showTitle>
   <showCloseButton>true</showCloseButton>

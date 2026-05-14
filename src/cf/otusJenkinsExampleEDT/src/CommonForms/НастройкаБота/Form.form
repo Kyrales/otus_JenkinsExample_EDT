@@ -9,7 +9,7 @@
     <id>18</id>
     <items xsi:type="form:FormField">
       <name>КоличествоДней</name>
-      <id>1</id>
+      <id>5</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -24,7 +24,7 @@
       </handlers>
       <extendedTooltip>
         <name>КоличествоДнейРасширеннаяПодсказка</name>
-        <id>3</id>
+        <id>9</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -34,7 +34,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>КоличествоДнейКонтекстноеМеню</name>
-        <id>2</id>
+        <id>8</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -59,6 +59,7 @@
       <name>КоличествоДнейСтрока</name>
       <id>15</id>
       <visible>true</visible>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
@@ -181,6 +182,7 @@
       <name>ИнтервалПроверкиСтрока</name>
       <id>22</id>
       <visible>true</visible>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
@@ -398,6 +400,12 @@
     <edit>
       <common>true</common>
     </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.РаботаСТорговымОборудованием</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Объект.УчетПоСкладам</segments>
+    </notDefaultUseAlwaysAttributes>
     <main>true</main>
   </attributes>
   <attributes>

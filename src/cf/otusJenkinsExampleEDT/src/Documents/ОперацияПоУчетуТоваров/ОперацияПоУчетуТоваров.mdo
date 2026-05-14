@@ -19,7 +19,7 @@
     <dataHistory>Use</dataHistory>
     <name>Posted</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -27,7 +27,7 @@
     <dataHistory>Use</dataHistory>
     <name>Ref</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -35,7 +35,7 @@
     <dataHistory>Use</dataHistory>
     <name>DeletionMark</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -44,7 +44,7 @@
     <name>Date</name>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -52,7 +52,7 @@
     <dataHistory>Use</dataHistory>
     <name>Number</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -64,7 +64,7 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
+  <fullTextSearch>DontUse</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
     <value>Корректировка остатка</value>
@@ -110,10 +110,8 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <quickChoice>DontUse</quickChoice>
     <createOnInput>Use</createOnInput>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="0bb7fee3-f208-4f91-8392-bf82f640a246">
@@ -131,7 +129,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.Организации.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="57831099-84e2-4236-84cb-212e22c11fa9">

@@ -6,7 +6,6 @@
     <value>Установить программу работы со сканером</value>
   </synonym>
   <group>ActionsPanelTools</group>
-  <commandParameterType/>
   <representation>Auto</representation>
   <toolTip>
     <key>ru</key>

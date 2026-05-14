@@ -403,7 +403,6 @@
       <value>Путеводитель по конфигурации</value>
     </synonym>
     <group>CommandGroup.Информация</group>
-    <commandParameterType/>
     <representation>Auto</representation>
   </commands>
 </mdclass:DataProcessor>

@@ -170,6 +170,7 @@
       <name>КомандаСоздатьПочтовыйЯщикIMAP</name>
       <id>41</id>
       <visible>true</visible>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
@@ -280,6 +281,7 @@
         <name>ПочтовыйЯщикIMAP</name>
         <id>37</id>
         <visible>true</visible>
+        <enabled>false</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
@@ -487,7 +489,7 @@
       </items>
       <items xsi:type="form:Table">
         <name>СписокВходящие</name>
-        <id>1</id>
+        <id>8</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -503,7 +505,7 @@
         <excludedCommands>SetDeletionMark</excludedCommands>
         <items xsi:type="form:FormField">
           <name>ДатаВходящие</name>
-          <id>6</id>
+          <id>40</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -539,7 +541,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>НаименованиеВходящие</name>
-          <id>4</id>
+          <id>35</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -561,7 +563,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>НаименованиеВходящиеКонтекстноеМеню</name>
-            <id>5</id>
+            <id>39</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
@@ -653,7 +655,7 @@
         <commandBarLocation>None</commandBarLocation>
         <autoCommandBar>
           <name>СписокВходящиеКоманднаяПанель</name>
-          <id>3</id>
+          <id>26</id>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
@@ -740,7 +742,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>СписокВходящиеКонтекстноеМеню</name>
-          <id>2</id>
+          <id>20</id>
           <autoFill>true</autoFill>
         </contextMenu>
         <changeRowSet>true</changeRowSet>
@@ -1351,7 +1353,7 @@
       <key>ru</key>
       <value>Список входящие</value>
     </title>
-    <id>1</id>
+    <id>9</id>
     <valueType>
       <types>DynamicList</types>
     </valueType>
@@ -1395,7 +1397,7 @@
       <key>ru</key>
       <value>Список исходящие</value>
     </title>
-    <id>2</id>
+    <id>21</id>
     <valueType>
       <types>DynamicList</types>
     </valueType>
@@ -1434,7 +1436,7 @@
       <key>ru</key>
       <value>Использовать IMAP</value>
     </title>
-    <id>3</id>
+    <id>34</id>
     <valueType>
       <types>Boolean</types>
     </valueType>
@@ -1451,7 +1453,7 @@
       <key>ru</key>
       <value>Почтовый ящик</value>
     </title>
-    <id>4</id>
+    <id>36</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

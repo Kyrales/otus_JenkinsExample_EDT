@@ -17,6 +17,13 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Цена</dataPath>
 			<field>Цена</field>
+			<presentationExpression>СервисныеМеханизмы.ПредставлениеЦена(Цена)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВидЦен</dataPath>

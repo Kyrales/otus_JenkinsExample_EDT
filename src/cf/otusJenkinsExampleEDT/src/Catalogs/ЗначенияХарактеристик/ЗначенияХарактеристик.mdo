@@ -21,7 +21,7 @@
     <dataHistory>Use</dataHistory>
     <name>PredefinedDataName</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -29,7 +29,7 @@
     <dataHistory>Use</dataHistory>
     <name>Predefined</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -37,7 +37,7 @@
     <dataHistory>Use</dataHistory>
     <name>Ref</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -45,7 +45,7 @@
     <dataHistory>Use</dataHistory>
     <name>DeletionMark</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -53,7 +53,7 @@
     <dataHistory>Use</dataHistory>
     <name>IsFolder</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -69,7 +69,7 @@
       <value>ChartOfCharacteristicTypes.ВидыХарактеристик.EmptyRef</value>
     </fillValue>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -80,7 +80,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.ЗначенияХарактеристик.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -89,17 +89,15 @@
     <name>Description</name>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Code</name>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -111,7 +109,7 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
+  <fullTextSearch>DontUse</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
     <value>Значение характеристики</value>

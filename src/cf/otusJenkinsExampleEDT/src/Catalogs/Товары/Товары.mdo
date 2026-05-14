@@ -22,7 +22,7 @@
     <dataHistory>Use</dataHistory>
     <name>PredefinedDataName</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -30,7 +30,7 @@
     <dataHistory>Use</dataHistory>
     <name>Predefined</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -38,7 +38,7 @@
     <dataHistory>Use</dataHistory>
     <name>Ref</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -46,7 +46,7 @@
     <dataHistory>Use</dataHistory>
     <name>DeletionMark</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -54,7 +54,7 @@
     <dataHistory>Use</dataHistory>
     <name>IsFolder</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -64,7 +64,7 @@
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -83,18 +83,16 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.Товары.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Description</name>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:StringValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -102,7 +100,7 @@
     <dataHistory>Use</dataHistory>
     <name>Code</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -130,7 +128,7 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
+  <fullTextSearch>DontUse</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
     <value>Товар</value>
@@ -171,11 +169,9 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <quickChoice>DontUse</quickChoice>
     <createOnInput>Use</createOnInput>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:StringValue"/>
     <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="b0d970e8-cee5-4479-bddb-500a7703a30a">
@@ -192,7 +188,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.Контрагенты.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="7b2a70ac-8157-4ab5-8094-48c8c25adef1">
@@ -213,7 +209,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.ХранимыеФайлы.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="962d4fd1-45eb-4f0c-b0ae-6500d4fc598b">
@@ -230,7 +226,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Enum.ВидыТоваров.EnumValue.Товар</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="a17db136-8433-4fb3-bcd1-b249cd018146">
@@ -249,11 +245,9 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <quickChoice>DontUse</quickChoice>
     <createOnInput>Use</createOnInput>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:StringValue"/>
     <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="f6f15301-0782-4b4c-8ee1-8c244019c1cd">
@@ -268,10 +262,8 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="70f371c9-ca2a-41c2-b53c-a741d9555b7c">

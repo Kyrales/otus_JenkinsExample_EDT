@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e1a02a1-344b-4f6a-b778-ffa7033b4e12">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c436b2b-989d-43e7-9e4f-d3ea566b12ea">
   <name>ЮТЗапросыСлужебныйСервер</name>
   <synonym>
     <key>ru</key>

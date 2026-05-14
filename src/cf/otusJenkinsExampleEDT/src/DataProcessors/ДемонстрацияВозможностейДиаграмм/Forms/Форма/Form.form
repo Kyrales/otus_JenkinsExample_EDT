@@ -56,14 +56,15 @@
     <id>-1</id>
     <items xsi:type="form:Button">
       <name>ПредыдущийПример</name>
-      <id>1</id>
+      <id>8</id>
       <visible>true</visible>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <extendedTooltip>
         <name>ПредыдущийПримерРасширеннаяПодсказка</name>
-        <id>2</id>
+        <id>10</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -86,6 +87,7 @@
       <name>СледующийПример</name>
       <id>3</id>
       <visible>true</visible>
+      <enabled>false</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
@@ -127,7 +129,7 @@
   <showCloseButton>true</showCloseButton>
   <attributes>
     <name>Объект</name>
-    <id>1</id>
+    <id>9</id>
     <valueType>
       <types>DataProcessorObject.ДемонстрацияВозможностейДиаграмм</types>
     </valueType>
@@ -145,7 +147,7 @@
       <key>ru</key>
       <value>Демонстрация диаграмм</value>
     </title>
-    <id>2</id>
+    <id>11</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>

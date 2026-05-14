@@ -6,6 +6,5 @@
     <value>Установить расширение работы с криптографией</value>
   </synonym>
   <group>ActionsPanelTools</group>
-  <commandParameterType/>
   <representation>Auto</representation>
 </mdclass:CommonCommand>

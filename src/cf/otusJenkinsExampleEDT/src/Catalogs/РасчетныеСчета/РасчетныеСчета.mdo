@@ -20,7 +20,7 @@
     <dataHistory>Use</dataHistory>
     <name>PredefinedDataName</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -28,7 +28,7 @@
     <dataHistory>Use</dataHistory>
     <name>Predefined</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -36,7 +36,7 @@
     <dataHistory>Use</dataHistory>
     <name>Ref</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -44,7 +44,7 @@
     <dataHistory>Use</dataHistory>
     <name>DeletionMark</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -52,7 +52,7 @@
     <dataHistory>Use</dataHistory>
     <name>IsFolder</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -68,7 +68,7 @@
       <value>Catalog.Организации.EmptyRef</value>
     </fillValue>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -77,7 +77,7 @@
     <name>Parent</name>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -86,7 +86,7 @@
     <name>Description</name>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -94,7 +94,7 @@
     <dataHistory>Use</dataHistory>
     <name>Code</name>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
@@ -106,7 +106,7 @@
     </pages>
   </help>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
+  <fullTextSearch>DontUse</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
     <value>Расчетный счет</value>
@@ -154,10 +154,8 @@
     <fillChecking>ShowError</fillChecking>
     <quickChoice>DontUse</quickChoice>
     <createOnInput>Use</createOnInput>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="aac6dd88-8347-4214-87bd-303241768b89">
@@ -179,7 +177,7 @@
     <fillValue xsi:type="core:ReferenceValue">
       <value>Catalog.Банки.EmptyRef</value>
     </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
+    <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="47efd4b9-035d-40d2-bbea-b2557655d37c">

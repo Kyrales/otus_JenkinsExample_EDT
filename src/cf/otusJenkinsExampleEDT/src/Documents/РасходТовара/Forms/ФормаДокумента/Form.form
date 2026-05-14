@@ -8,7 +8,7 @@
       <id>40</id>
       <items xsi:type="form:FormField">
         <name>Номер</name>
-        <id>2</id>
+        <id>22</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -53,7 +53,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Дата</name>
-        <id>3</id>
+        <id>59</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1144,14 +1144,6 @@
     <name>ОбработкаЗаписиНового</name>
   </handlers>
   <handlers>
-    <event>URLListGetProcessing</event>
-    <name>ОбработкаПолученияСпискаНавигационныхСсылок</name>
-  </handlers>
-  <handlers>
-    <event>URLGetProcessing</event>
-    <name>ОбработкаПолученияНавигационнойСсылки</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -1170,7 +1162,7 @@
       <key>ru</key>
       <value>Объект</value>
     </title>
-    <id>1</id>
+    <id>10</id>
     <valueType>
       <types>DocumentObject.РасходТовара</types>
     </valueType>
@@ -1195,7 +1187,7 @@
           <key>ru</key>
           <value>Сумма изменена</value>
         </title>
-        <id>1</id>
+        <id>19</id>
         <valueType>
           <types>Boolean</types>
         </valueType>
@@ -1212,7 +1204,7 @@
           <key>ru</key>
           <value>Это услуга?</value>
         </title>
-        <id>2</id>
+        <id>49</id>
         <valueType>
           <types>Boolean</types>
         </valueType>

@@ -112,19 +112,115 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
+			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<name>ReadDataHistoryOfMissingData</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<name>UpdateDataHistoryVersionComment</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.РасчетныеСчета.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.ВидЦен</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.Attribute.Подписан</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -153,54 +249,10 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Контрагенты</name>
+		<name>Catalog.Контрагенты.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ReadDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ReadDataHistoryOfMissingData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistoryVersionComment</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>ViewDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>EditDataHistoryVersionComment</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>SwitchToDataHistoryVersion</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -297,6 +349,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Контрагенты.Attribute.Регион</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ЭлектроннаяПочта</name>
 		<right>
 			<name>Use</name>
@@ -305,6 +364,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.Attribute.ДляОписания</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -383,21 +449,68 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.ValueType</name>
 		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.Description</name>
 		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.Code</name>
 		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -417,6 +530,13 @@
 		<right>
 			<name>Edit</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.ЭлектроннаяПочта</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -487,22 +607,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -528,6 +632,69 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Пользователи.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.Продажи</name>
 		<right>
 			<name>Read</name>
@@ -536,6 +703,20 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.Attribute.НеИспользовать</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Телефон</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -710,22 +891,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -748,6 +913,69 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Регионы.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -785,6 +1013,13 @@
 	</object>
 	<object>
 		<name>InformationRegister.ЦеныТоваров.Dimension.ВидЦен</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.Attribute.Назначение</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -864,22 +1099,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -902,6 +1121,69 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1172,6 +1454,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Валюты.Attribute.НаименованиеОсновнойВалюты</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Банки</name>
 		<right>
 			<name>Read</name>
@@ -1179,22 +1468,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -1220,6 +1493,69 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Банки.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1252,22 +1588,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -1293,6 +1613,69 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ТоварныеЗапасы.Resource.Количество</name>
 		<right>
 			<name>Edit</name>
@@ -1304,6 +1687,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCharacteristicTypes.ВидыХарактеристик.Attribute.Множественная</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1350,22 +1740,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -1388,6 +1762,13 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1495,22 +1876,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -1536,6 +1901,69 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Склады.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Склады.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьIMAP</name>
 		<right>
 			<name>Read</name>
@@ -1556,6 +1984,13 @@
 	</object>
 	<object>
 		<name>InformationRegister.ЦеныТоваров.Resource.Цена</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Индекс</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1627,6 +2062,20 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары.Attribute.Артикул</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Факс</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1709,6 +2158,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Товары.Attribute.ФайлКартинки</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ХранилищеВариантовОтчетов.Command.ОткрытьОтчет</name>
 		<right>
 			<name>View</name>
@@ -1748,6 +2204,20 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Контрагенты.Attribute.Долгота</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.КонтактноеЛицо</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ПарольPOP3</name>
 		<right>
 			<name>Read</name>
@@ -1767,6 +2237,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Пользователи.Attribute.ИдентификаторПользователяИБ</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Организации</name>
 		<right>
 			<name>Read</name>
@@ -1774,22 +2251,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -1815,6 +2276,76 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Организации.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Дом</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1835,22 +2366,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -1873,6 +2388,69 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыЦен.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1918,10 +2496,24 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Товары.Attribute.Вид</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.Путеводитель.Command.ПутеводительПоКонфигурации</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Широта</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2107,6 +2699,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Товары.Attribute.Штрихкод</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.ДемонстрационноеПриложение</name>
 		<right>
 			<name>UpdateDataBaseConfiguration</name>
@@ -2217,6 +2816,13 @@
 	</object>
 	<object>
 		<name>Catalog.РасчетныеСчета.Attribute.Банк</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары.Attribute.Поставщик</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2360,6 +2966,27 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Контрагенты.Attribute.Страна</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранимыеФайлы.Attribute.Зашифрован</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.Attribute.ВариантОтчета</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресPOP3Сервера</name>
 		<right>
 			<name>Read</name>
@@ -2389,22 +3016,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
@@ -2427,6 +3038,69 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2456,6 +3130,20 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ХранимыеФайлы.Attribute.Подпись</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ХранилищеВариантовОтчетов.Attribute.КлючОбъекта</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ЗначенияХарактеристик</name>
 		<right>
 			<name>Read</name>
@@ -2463,22 +3151,6 @@
 		</right>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -2504,6 +3176,83 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗначенияХарактеристик.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Улица</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Валюты.Attribute.НаименованиеРазменнойВалюты</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2545,7 +3294,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Организации.Attribute.ВалютныйУчет</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.ВебСайт</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.КурсыВалют.Dimension.Валюта</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.ДополнительнаяИнформация</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2560,6 +3330,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Товары.Attribute.Описание</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2603,6 +3380,13 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты.Attribute.Город</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>

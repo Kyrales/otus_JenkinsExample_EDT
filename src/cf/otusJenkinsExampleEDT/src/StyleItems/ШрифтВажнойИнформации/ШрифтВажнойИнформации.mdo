@@ -13,6 +13,7 @@
       <italic>false</italic>
       <underline>false</underline>
       <strikeout>false</strikeout>
+      <scale>120</scale>
     </value>
   </value>
 </mdclass:StyleItem>
