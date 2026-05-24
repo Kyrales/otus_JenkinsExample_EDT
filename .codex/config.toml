@@ -1,0 +1,6 @@
+[mcp_servers.v8-runner]
+command = "v8-runner"
+args = ["--config", "F:\\1C\\Projects\\otus_JenkinsExample_EDT\\v8project.yaml", "mcp", "serve", "stdio"]
+
+[mcp_servers.edt-mcp]
+url = "http://localhost:8765/mcp"
