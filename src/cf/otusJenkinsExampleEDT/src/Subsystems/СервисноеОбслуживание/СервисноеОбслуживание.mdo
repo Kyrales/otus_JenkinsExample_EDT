@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df594cec-fea2-4140-8ecd-c9b3c858b085">
+  <name>СервисноеОбслуживание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисное обслуживание</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Enum.СтатусыЗаявокНаОбслуживание</content>
+  <content>Document.ЗаявкаНаОбслуживание</content>
+  <content>Report.ЗаявкиНаОбслуживание</content>
+</mdclass:Subsystem>

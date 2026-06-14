@@ -185,7 +185,6 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
-  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.27</compatibilityMode>
   <defaultConstantsForm>CommonForm.ОбщиеНастройки</defaultConstantsForm>
   <languages uuid="d5fb342e-0c73-4410-8517-8ce7ee20e8bd">
@@ -201,6 +200,7 @@
   <subsystems>Subsystem.Продажи</subsystems>
   <subsystems>Subsystem.Финансы</subsystems>
   <subsystems>Subsystem.ТоварныеЗапасы</subsystems>
+  <subsystems>Subsystem.СервисноеОбслуживание</subsystems>
   <styleItems>StyleItem.ЦветТекстаСущественныхИзмененийДанных</styleItems>
   <styleItems>StyleItem.ЦветТекстаНормальногоСостояния</styleItems>
   <styleItems>StyleItem.ЦветТекстаОшибочногоСостояния</styleItems>
@@ -375,6 +375,7 @@
   <documents>Document.ПоступлениеДенег</documents>
   <documents>Document.ПриходТовара</documents>
   <documents>Document.РасходТовара</documents>
+  <documents>Document.ЗаявкаНаОбслуживание</documents>
   <documentJournals>DocumentJournal.ДокументыПродаж</documentJournals>
   <documentJournals>DocumentJournal.ФинансовыеДокументы</documentJournals>
   <enums>Enum.ВидыТоваров</enums>
@@ -385,6 +386,7 @@
   <enums>Enum.СостоянияЗаказов</enums>
   <enums>Enum.НазначениеХарактеристик</enums>
   <enums>Enum.ИспользоватьПровайдерГеопозиционирования</enums>
+  <enums>Enum.СтатусыЗаявокНаОбслуживание</enums>
   <reports>Report.ВзаимосвязьПродажТоваров</reports>
   <reports>Report.ДашбордПродажи</reports>
   <reports>Report.ДинамикаПродаж</reports>
@@ -394,6 +396,7 @@
   <reports>Report.ПрайсЛист</reports>
   <reports>Report.АнализЗаказов</reports>
   <reports>Report.ОстаткиТоваровНаСкладахМобильный</reports>
+  <reports>Report.ЗаявкиНаОбслуживание</reports>
   <dataProcessors>DataProcessor.АдминистративныйСервис</dataProcessors>
   <dataProcessors>DataProcessor.ДемонстрацияВозможностейДиаграмм</dataProcessors>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>

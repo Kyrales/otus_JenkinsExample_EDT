@@ -6,7 +6,7 @@ execution_timeout: 3600000
 format: EDT
 builder: DESIGNER
 infobase:
-  connection: 'File=build/ib'
+  connection: 'File=build/ib_lesson'
   user: 'Администратор'
 tests:
   execution_timeout_seconds: 3600
