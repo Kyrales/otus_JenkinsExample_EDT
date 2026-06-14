@@ -4,3 +4,6 @@ args = ["--config", "F:\\1C\\Projects\\otus_JenkinsExample_EDT\\v8project.yaml",
 
 [mcp_servers.edt-mcp]
 url = "http://localhost:8765/mcp"
+
+[mcp_servers.onec-mcp-toolkit]
+url = "http://localhost:6003/mcp"
