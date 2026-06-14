@@ -23,7 +23,6 @@
 |---|---|
 | [bsl-coding-style.md](bsl-coding-style.md) | Перед правкой или ревью BSL-кода |
 
-
 ## Приоритет конфликтов
 
 ```
@@ -45,7 +44,7 @@
 ## ALWAYS (всегда)
 
 - Перед правкой объекта BSL — прочитай метод через `read_method_source`, не загружай модуль целиком
-- Перед `rename_metadata_object` / `delete_metadata_object` — сначала вызов **без** `confirm` (preview всех изменений), потом тот же вызов с `confirm: true` для применения
+- Перед `rename_metadata_object` / `delete_metadata` — сначала вызов **без** `confirm` (preview всех изменений), потом тот же вызов с `confirm: true` для применения
 - После любой записи кода — проверь ошибки через `get_project_errors` или `get_problem_summary`
 - Перед написанием нового кода — найди похожие паттерны в проекте через `search_in_code` и следуй им
 - При сомнениях в сигнатуре платформы 1С — `get_platform_documentation`, не угадывай

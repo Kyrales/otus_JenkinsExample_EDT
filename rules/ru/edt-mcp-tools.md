@@ -2,7 +2,7 @@
 
 > Источник истины — раздел «Available Tools» в `README.md` репозитория EDT-MCP. Если расходится с этим файлом — верь README.
 >
-> Всего инструментов: **56**, разбиты на 9 групп.
+> Всего инструментов: **57**, разбиты на 9 групп.
 
 ## Префиксы имён в разных клиентах
 
@@ -26,8 +26,12 @@ MCP-клиенты именуют инструменты по-разному. Р
 | «Прочитай метод X модуля Y» | `read_method_source` | **Никогда** не загружай весь модуль ради одного метода |
 | «Покажи код модуля целиком» | сначала `get_module_structure` (карта), потом `read_module_source` только если действительно нужен весь файл | Экономия токенов |
 | «Измени код в методе» | `read_method_source` → `write_module_source` с `mode: searchReplace` | См. `edt-mcp-write-safety.md` |
-| «Переименуй / удали объект метаданных» | `rename_metadata_object` / `delete_metadata_object` **без** `confirm` (preview) → тот же вызов с `confirm: true` | Ручная правка XML каскадно ломает ссылки |
-| «Добавь реквизит» | `add_metadata_attribute` | Не редактируй `.mdo` руками |
+| «Переименуй объект метаданных» | `rename_metadata_object` **без** `confirm` (preview) → тот же вызов с `confirm: true` | Ручная правка XML каскадно ломает ссылки |
+| «Удали объект / член метаданных» | `delete_metadata` **без** `confirm` (preview) → тот же вызов с `confirm: true` | Ручная правка XML каскадно ломает ссылки |
+| «Создай новый объект» | `create_metadata` с FQN верхнего уровня (`Catalog.Products`) | Дефолтное наполнение EDT + корректный UUID; не собирай `.mdo` руками |
+| «Добавь реквизит / табличную часть / измерение / ресурс» | `create_metadata` с FQN члена (`Catalog.Products.Attribute.Weight`) | Не редактируй `.mdo` руками; вид выводится из FQN |
+| «Установи тип реквизита / синоним / другое свойство» | `modify_metadata` (структурная спецификация `type`); какие свойства назначаемы — `get_metadata_details(assignable: true)` | Не редактируй `.mdo` руками ради назначаемых свойств |
+| «Какие свойства можно задать у объекта/члена?» | `get_metadata_details(assignable: true)` | Список назначаемых свойств + допустимые значения |
 | «Проверь запрос 1С» | `validate_query` (для СКД — `dcsMode: true`) | Перед вставкой текста запроса в код |
 | «Что в этой форме?» | `get_form_layout_snapshot` с `mode: compact` (YAML); `get_form_screenshot` если нужен визуал | YAML дешевле PNG |
 | «Что показывает платформа для типа X?» | `get_platform_documentation` | Не угадывай сигнатуры |
@@ -43,7 +47,7 @@ MCP-клиенты именуют инструменты по-разному. Р
 
 | Пресет | Что выключено |
 |---|---|
-| **All Tools** | Ничего (все 56 инструментов) |
+| **All Tools** | Ничего (все 57 инструментов) |
 | **Analysis Only** | Группы Applications & Testing, Debugging, BSL Code, Refactoring, Translation + `export_configuration_to_xml` + `import_configuration_from_xml`. Доступны: Core/Project (кроме export/import), Errors & Problems, Code Intelligence, Tags |
 | **Code Review** | То же, что Analysis Only, **минус** добавляются доступными все инструменты BSL Code **кроме** `write_module_source`. То есть доступны `read_method_source`, `read_module_source`, `get_module_structure`, `list_modules`, `search_in_code`, `get_method_call_hierarchy`, `go_to_definition`, `get_symbol_info`, `get_form_layout_snapshot`, `get_form_screenshot`, `validate_query` |
 | **Development** | Только группа Debugging (включая `debug_yaxunit_tests`, `start_profiling`, `get_profiling_results`). Refactoring, Translation, BSL Code, Applications — доступны |
@@ -55,8 +59,7 @@ MCP-клиенты именуют инструменты по-разному. Р
 | Инструмент | Параметр | Default | Диапазон |
 |---|---|---|---|
 | `get_project_errors` | `limit` | 100 | 1–1000 |
-| `get_bookmarks` | `limit` | 100 | 1–1000 |
-| `get_tasks` | `limit` | 100 | 1–1000 |
+| `get_markers` | `limit` | 100 | 1–1000 |
 | `get_metadata_objects` | `limit` | 100 | 1–1000 |
 | `get_content_assist` | (limit) | 100 | 1–1000 |
 | `search_in_code` | `maxResults` | 100 | 1–500 |
@@ -77,14 +80,13 @@ MCP-клиенты именуют инструменты по-разному. Р
 | `export_configuration_to_xml` | Экспорт конфигурации в XML (EDT menu: Export → Configuration to XML Files) | По запросу пользователя |
 | `import_configuration_from_xml` | Импорт конфигурации из XML (обратный к экспорту) | По запросу пользователя |
 
-### 2. Errors & Problems — ошибки и задачи (4)
+### 2. Errors & Problems — ошибки и задачи (3)
 
 | Инструмент | Назначение | Когда использовать |
 |---|---|---|
 | `get_problem_summary` | Сводка по числу проблем по проектам и severity | **Первым** — даёт картину одним вызовом |
 | `get_project_errors` | Детальные ошибки. Фильтры: `projectName`, `severity` (ERRORS/BLOCKER/CRITICAL/MAJOR/MINOR/TRIVIAL), `checkId` (подстрока), `objects` (массив FQN), `limit` (default 100, max 1000) | После сводки — для целевого изучения |
-| `get_bookmarks` | Закладки workspace | По запросу |
-| `get_tasks` | TODO/FIXME-маркеры | По запросу или при аудите технического долга |
+| `get_markers` | Маркеры workspace — закладки и/или TODO/FIXME-маркеры. Фильтры: `markerKind` (`bookmark`/`task`; без него — оба), `projectName`, `filePath`, `priority` (только для задач) | По запросу или при аудите технического долга |
 
 ### 3. Code Intelligence — навигация и подсказки (7)
 
@@ -93,10 +95,10 @@ MCP-клиенты именуют инструменты по-разному. Р
 | `get_content_assist` | Подсказки в точке кода (типы, методы) | При работе в конкретной позиции BSL |
 | `get_platform_documentation` | Документация платформы (типы, методы, свойства, конструкторы) | При сомнениях в сигнатуре платформы 1С |
 | `get_metadata_objects` | Список объектов конфигурации с фильтрами `metadataType`, `nameFilter`, `limit` (default 100, max 1000), `language` | Обзор объектов; **всегда** с фильтром |
-| `get_metadata_details` | Детальные свойства объектов по массиву FQN (`objectFqns: [...]`) | После того как нашёл нужные объекты |
+| `get_metadata_details` | Детальные свойства объектов по массиву FQN (`objectFqns: [...]`); FQN могут адресовать члены (`Catalog.Products.Attribute.Weight`). С `assignable: true` возвращает схему **назначаемых** свойств (вид значения, текущее значение, допустимые литералы перечисления) — то, что умеет ставить `modify_metadata` | После того как нашёл нужные объекты; перед `modify_metadata` — с `assignable: true` |
 | `list_subsystems` | Дерево подсистем (плоская таблица, рекурсивно по умолчанию) | Знакомство со структурой конфигурации |
 | `get_subsystem_content` | Содержимое подсистемы по FQN: свойства, объекты, вложенные подсистемы | Углубление в конкретную подсистему |
-| `find_references` | Все ссылки на объект метаданных в коде, формах, ролях. **Только top-level объекты** (`Catalog.X`, `Document.Y`, `CommonModule.Z`); для вложенных (реквизиты, табличные части, формы) вернёт ошибку — используй сразу `rename_metadata_object`/`delete_metadata_object` | Перед переименованием/удалением top-level объекта |
+| `find_references` | Все ссылки на объект метаданных в коде, формах, ролях. **Только top-level объекты** (`Catalog.X`, `Document.Y`, `CommonModule.Z`); для вложенных (реквизиты, табличные части, формы) вернёт ошибку — используй сразу `rename_metadata_object`/`delete_metadata` | Перед переименованием/удалением top-level объекта |
 
 ### 4. Tags — теги (2)
 
@@ -151,13 +153,14 @@ MCP-клиенты именуют инструменты по-разному. Р
 | `get_form_screenshot` | PNG формы из WYSIWYG (embedded image resource) | Когда нужен визуальный контекст |
 | `validate_query` | Проверка текста запроса 1С (синтаксис + семантика). Параметр `dcsMode: true` — для запросов СКД | **Перед** вставкой нового запроса в код |
 
-### 8. Refactoring — рефакторинг метаданных (3)
+### 8. Refactoring — рефакторинг метаданных (4)
 
 | Инструмент | Назначение | Когда использовать |
 |---|---|---|
-| `rename_metadata_object` | Переименование с каскадным обновлением (BSL-код, формы, метаданные). Workflow: 1) вызов без `confirm` — preview всех change points с индексами; 2) (опционально) `disableIndices: "2,3,5"` для пропуска отдельных изменений; 3) `confirm: true`. Параметр `maxResults` (default 20, 0 = без лимита) ограничивает preview. Поддерживает русские FQN | **Только** так переименовывать; ручная правка XML опасна |
-| `delete_metadata_object` | Удаление с очисткой ссылок. Аналогичный workflow preview → confirm | Аналогично |
-| `add_metadata_attribute` | Добавить реквизит в объект (Catalog, Document, Register, ...) | Вместо ручного редактирования `.mdo` |
+| `rename_metadata_object` | Переименование с каскадным обновлением (BSL-код, формы, метаданные). Workflow: 1) вызов без `confirm` — preview всех change points с индексами; 2) (опционально) `disableIndices: "2,3,5"` для пропуска отдельных изменений; 3) `confirm: true`. Параметр `maxResults` (default 20, 0 = без лимита) ограничивает preview. Поддерживает русские FQN. **Единственный** инструмент переименования — `modify_metadata` имя не меняет | **Только** так переименовывать; ручная правка XML опасна |
+| `delete_metadata` | Удаление объекта **или** члена по FQN с каскадной очисткой ссылок в BSL/формах/других метаданных. Параметры: `projectName`, `fqn`, опц. `confirm`. Две фазы: вызов без `confirm` — preview затронутых ссылок; `confirm: true` — применение | **Только** так удалять; ручная правка XML опасна |
+| `create_metadata` | Создать узел метаданных по 1C full-name FQN: объект верхнего уровня (`Catalog.Products` / `Справочник.Товары`) **или** подчинённый член (`Catalog.Products.Attribute.Weight`, `InformationRegister.Prices.Dimension.Product`, `Document.Order.TabularSection.Goods`, `Enum.Colors.EnumValue.Red`). Вид выводится из FQN; токены типа и вида допускаются на русском и английском. Параметры: `projectName`, `fqn`, опц. `properties` (массив `{name, value, language?}`), опц. `expectedNotExists`. При создании в `properties` принимаются **только** `synonym` и `comment` — остальные свойства задаёт `modify_metadata`. Дубликаты отклоняются. Поддерживаемые типы верхнего уровня: `Catalog`, `Document`, `InformationRegister`, `AccumulationRegister`, `Enum`, `CommonModule`, `Report`, `DataProcessor`. Пока поддерживается один уровень вложенности члена (поле табличной части пока отклоняется) | Вместо ручной сборки нового `.mdo`; после — прогнать `get_project_errors` |
+| `modify_metadata` | Установить свойства объекта **или** члена по FQN. Параметры: `projectName`, `fqn`, `properties` (массив `{name, value, language?}`). Каждое свойство валидируется: должно быть назначаемым (иначе ошибка перечисляет назначаемые и указывает на `get_metadata_details(assignable: true)`), значение перечисления — одним из допустимых литералов. Умеет `synonym` (по коду языка), `comment` и `type` (структурная спецификация). Для переименования — `rename_metadata_object` (свойство `name` отклоняется) | Задать тип реквизита, синоним и прочие назначаемые свойства без ручной правки `.mdo` |
 
 ### 9. Translation (LanguageTool) — перевод (3)
 
