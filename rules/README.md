@@ -31,6 +31,15 @@
 - Полная перевалидация при необходимости: `edt-mcp.clean_project`.
 - Команды сборки и тестов проекта: через `v8-runner` согласно `v8project.yaml`.
 
+## Обязательные правила для тестов
+
+Перед написанием, изменением или ревью YAxUnit-тестов обязательно прочитай и применяй все правила из `rules/tests/`:
+
+- `rules/tests/testing_guidelines.mdc`
+- `rules/tests/yaxunit-asserions.mdc`
+- `rules/tests/yaxunit-test-data.mdc`
+- `rules/tests/yaxunit_test_writer_prompt.mdc`
+
 ## Приоритет инструкций
 
 Текущий запрос пользователя выше этого файла. Затем применяются `AGENTS.md`, правила из `rules/`, внутренняя документация проекта и только потом общие привычки Codex.
