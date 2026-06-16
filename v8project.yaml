@@ -6,10 +6,15 @@ execution_timeout: 3600000
 format: EDT
 builder: DESIGNER
 infobase:
-  connection: 'File=build/ib_lesson'
+  connection: 'File=build/ib'
   user: 'Администратор'
 tests:
   execution_timeout_seconds: 3600
+  yaxunit:
+    timeouts:
+      startup_ms: 300000
+      run_ms: 3600000
+      total_ms: 3600000
   va:
     params_path: 'tools\VAParams.json'
     profile: 'all'
