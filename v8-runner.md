@@ -47,7 +47,7 @@ TcpTestSucceeded : True
 
 ```powershell
 v8-runner build
-& 'C:\Program Files\1cv8\8.3.27.1989\bin\ibcmd.exe' infobase --db-path 'F:\1C\Projects\otus_JenkinsExample_EDT\build\ib' config extension update --name client_mcp --safe-mode no --unsafe-action-protection no --user 'Администратор'
+& 'C:\Program Files\1cv8\8.5.1.1989\bin\ibcmd.exe' infobase --db-path 'F:\1C\Projects\otus_JenkinsExample_EDT\build\ib' config extension update --name client_mcp --safe-mode no --unsafe-action-protection no --user 'Администратор'
 v8-runner launch mcp va --mcp-port 9874
 ```
 

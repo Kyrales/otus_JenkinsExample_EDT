@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/refs/heads/develop/resources/schema.json",
-  "v8version": "8.3.27.2130",
+  "v8version": "8.5.1.1522",
   "edtVersion": "2025.1.5:x86_64",
   "srcDir": "src/cf/otusJenkinsExampleEDT",
   "sourceFormat": "edt",

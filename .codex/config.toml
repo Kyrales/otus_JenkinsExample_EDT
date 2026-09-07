@@ -3,7 +3,7 @@ command = "v8-runner"
 args = ["--config", "F:\\1C\\Projects\\otus_JenkinsExample_EDT\\v8project.yaml", "mcp", "serve", "stdio"]
 
 [mcp_servers.edt-mcp]
-url = "http://localhost:8765/mcp"
+url = "http://localhost:8766/mcp"
 
 [mcp_servers.onec-mcp-toolkit]
 url = "http://localhost:6003/mcp"

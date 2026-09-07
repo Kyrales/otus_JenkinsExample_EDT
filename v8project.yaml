@@ -37,6 +37,6 @@ source-set:
     path: 'src/cfe/otusJenkinsExampleEDT.Колонтитулы'
 tools:
   platform:
-    version: '8.3.27'
+    version: '8.5.1'
 build:
   partialLoadThreshold: 20

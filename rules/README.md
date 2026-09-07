@@ -13,7 +13,7 @@
 - Основной EDT source set: `otusJenkinsExampleEDT`, путь `src/cf/otusJenkinsExampleEDT`.
 - Расширения: `YAXUNIT` и `Колонтитулы`, пути в `src/cfe/`.
 - Формат проекта: EDT.
-- Платформа 1С: `8.3.27` (`v8config.json`: `8.3.27.2130`).
+- Платформа 1С: `8.5.1` (`v8config.json`: `8.5.1.1522`).
 - Сборка и тесты описаны в `v8project.yaml`; рабочий каталог `build`.
 - MCP-серверы Codex настроены в `.codex/config.toml`: `edt-mcp` и `v8-runner`.
 
