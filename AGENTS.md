@@ -30,6 +30,7 @@
 - Сводка проблем EDT: `edt-mcp.get_problem_summary`.
 - Полная перевалидация при необходимости: `edt-mcp.clean_project`.
 - Команды сборки и тестов проекта: через `v8-runner` согласно `v8project.yaml`.
+- Тестирование на YAXUNIT и VA выполнять через `v8-runner` согласно `v8project.yaml`.
 
 ## Приоритет инструкций
 
