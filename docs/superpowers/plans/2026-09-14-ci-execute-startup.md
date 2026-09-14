@@ -100,7 +100,7 @@ create_metadata(projectName="otusJenkinsExampleEDT.YAXUNIT", fqn="CommonModule.�
 - [ ] **Step 3: Запустить тест и подтвердить красную фазу**
 
 ```text
-run_yaxunit_tests(projectName="otusJenkinsExampleEDT", applicationId="867ff919-3b34-4103-9116-42bd2dd45866", extensions=["YAXUNIT"], modules=["ОМ_ПараметрыЗапускаCI"], updateBeforeLaunch=true, timeout=45)
+run_yaxunit_tests(launchConfigurationName="otusJenkinsExampleEDT Тонкий клиент (1)", extensions=["YAXUNIT"], modules=["ОМ_ПараметрыЗапускаCI"], updateBeforeLaunch=true, timeout=45)
 ```
 
 Если возвращен `jobId`, опрашивать именно его через `get_job_status(waitSeconds=45)`, не запускать тест повторно. Общий срок ожидания — 180 секунд. После дедлайна вызвать `cancel_job` сначала без `confirm`, затем с `confirm=true`, и считать проверку проваленной. Expected: FAIL из-за отсутствующего метода `СервисныеМеханизмы.ТребуетсяОбновлениеИнформационнойБазы`; это обязательная красная фаза.
@@ -204,7 +204,7 @@ get_project_errors(projectName="otusJenkinsExampleEDT", severity="ERRORS", objec
 ```text
 revalidate_objects(projectName="otusJenkinsExampleEDT", objects=[])
 get_project_errors(projectName="otusJenkinsExampleEDT", severity="ERRORS", objects=["СервисныеМеханизмы", "ManagedApplicationModule"], limit=100)
-run_yaxunit_tests(projectName="otusJenkinsExampleEDT", applicationId="867ff919-3b34-4103-9116-42bd2dd45866", extensions=["YAXUNIT"], modules=["ОМ_ПараметрыЗапускаCI"], updateBeforeLaunch=true, timeout=45)
+run_yaxunit_tests(launchConfigurationName="otusJenkinsExampleEDT Тонкий клиент (1)", extensions=["YAXUNIT"], modules=["ОМ_ПараметрыЗапускаCI"], updateBeforeLaunch=true, timeout=45)
 ```
 
 Expected: наборы ошибок обоих модулей не хуже baseline, тестовый модуль PASS.
