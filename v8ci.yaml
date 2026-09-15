@@ -1,0 +1,62 @@
+version: 2
+default_profile: file
+default_pipeline: ci
+
+profiles:
+  file:
+    executor:
+      type: docker
+      image: ${CI_IMAGE}
+      env: [ONEC_HASP_SERVER]
+    infobase:
+      type: file
+      seed: image:/opt/onec-ci/base-ib/1Cv8.1CD
+      user: Администратор
+
+  server:
+    executor:
+      type: docker
+      image: ${CI_IMAGE}
+    infobase:
+      type: server
+      seed: image:/opt/onec-ci/base-ib/base.dt
+      server: ${Server1C}
+      user: ${ServerUser1C}
+      password: ${ServerPassword1C}
+      dbms:
+        kind: postgresql
+        server: ${ServerPG}
+        user: ${ServerUserPG}
+        password: ${ServerPasswordPG}
+      databases:
+        prepare: otus_jenkins_example_ci_prepare
+        yaxunit: otus_jenkins_example_ci_yaxunit
+        va: otus_jenkins_example_ci_va
+      locks:
+        mode: local
+        root: build/v8-ci/server-locks
+        timeout: 30m
+
+cleanup:
+  enabled: true
+  timeout: 10m
+
+pipelines:
+  ci:
+    - step: v8.prepare
+      timeout: 6m
+    - step: v8.test.yaxunit
+      timeout: 4m
+      retry: 1
+    - v8.cleanup
+
+  ci-full:
+    - step: v8.prepare
+      timeout: 6m
+    - step: v8.test.yaxunit
+      timeout: 4m
+      retry: 1
+    - step: v8.test.va
+      timeout: 6m
+      retry: 1
+    - v8.cleanup

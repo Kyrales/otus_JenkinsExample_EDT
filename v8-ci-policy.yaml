@@ -1,0 +1,42 @@
+allowed_env:
+  - CI_IMAGE
+  - ONEC_HASP_SERVER
+  - Server1C
+  - ServerUser1C
+  - ServerPassword1C
+  - ServerPG
+  - ServerUserPG
+  - ServerPasswordPG
+  - ALLURE_SERVICE_URL
+  - ALLURE_PROJECT_ID
+  - ALLURE_LOCK_ROOT
+  - GITFLIC_TOKEN
+  - GITFLIC_REGISTRY_TOKEN
+  - TELEGRAM_BOT_TOKEN
+  - TELEGRAM_CHAT_ID
+  - CI_PROJECT_NAMESPACE
+  - CI_PROJECT_NAME
+  - CI_PIPELINE_ID
+  - CI_PIPELINE_IID
+  - CI_COMMIT_SHA
+  - CI_COMMIT_REF_NAME
+  - CI_COMMIT_TAG
+  - CI_PIPELINE_SOURCE
+
+mount_roots: []
+approved_shared_lock_roots:
+  - F:/1C/Projects/RT_VT/gitflic-runner/allure-locks
+
+continuation:
+  managed_state_roots:
+    primary: F:/1C/Projects/otus_JenkinsExample_EDT/build/v8-ci/state
+  ci_export_roots:
+    - F:/1C/Projects/otus_JenkinsExample_EDT/build
+  durable_lock_root: F:/1C/Projects/otus_JenkinsExample_EDT/build/v8-ci/locks
+  runner_instance_id: otus-jenkins-example-local-windows
+  process_lease: 2m
+  max_handoff_bytes: 67108864
+  max_handoff_files: 2048
+  max_handoff_file_bytes: 16777216
+  trusted_tool_roots:
+    - F:/1C/Projects/v8-ci/build/release/windows
