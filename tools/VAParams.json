@@ -170,6 +170,7 @@
 	"ИмяКаталогаЛогОшибок": "",
 	"КомандаСделатьСкриншот": "\"C:\\Program Files (x86)\\IrfanView\\i_view32.exe\" /capture=1 /convert=",
 	"ИспользоватьКомпонентуVanessaExt": true,
+	"QuietInstallVanessaExt": true,
 	"ИспользоватьПарсерGherkinИзКомпонентыVanessaExt": true,
 	"ПоискФайловСПомощьюКомпонентыVanessaExt": false,
 	"ИспользоватьВнешнююКомпонентуДляСкриншотов": false,

@@ -39,7 +39,7 @@ profiles:
 
 cleanup:
   enabled: true
-  timeout: 10m
+  timeout: 5m
 
 pipelines:
   ci:
@@ -47,6 +47,9 @@ pipelines:
       timeout: 6m
     - step: v8.test.yaxunit
       timeout: 4m
+      retry: 1
+    - step: v8.test.va
+      timeout: 6m
       retry: 1
     - v8.cleanup
 

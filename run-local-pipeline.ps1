@@ -60,5 +60,9 @@ $env:CI_COMMIT_REF_NAME = $branch
 $env:CI_COMMIT_SHA = $sha
 $env:CI_PIPELINE_ID = "local-$([DateTime]::Now.ToString('yyyyMMdd-HHmmss'))"
 
-& $v8Ci --config (Join-Path $PSScriptRoot 'v8ci.yaml') --policy $policy run $Pipeline --profile $Profile
+$config = Join-Path $PSScriptRoot 'v8ci.yaml'
+& $v8Ci --config $config --policy $policy clean --older-than 24h
+if ($LASTEXITCODE -ne 0) { throw "v8-ci clean failed with exit code $LASTEXITCODE" }
+
+& $v8Ci --config $config --policy $policy run $Pipeline --profile $Profile
 exit $LASTEXITCODE
