@@ -63,3 +63,10 @@ pipelines:
       timeout: 6m
       retry: 1
     - v8.cleanup
+  
+  release:
+    - step: v8.prepare
+      timeout: 6m
+    - step: v8.make.cf
+      timeout: 6m
+    - v8.cleanup
