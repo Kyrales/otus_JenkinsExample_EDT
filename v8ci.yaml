@@ -1,72 +1,75 @@
-version: 2
-default_profile: file
-default_pipeline: ci
+version: 2  # Версия формата конфигурации v8-ci.
+default_profile: file  # Профиль, выбранный при запуске без --profile.
+default_pipeline: ci  # Конвейер, выбранный при запуске без имени.
 
-profiles:
-  file:
-    executor:
-      type: docker
-      image: ${CI_IMAGE}
-      env: [ONEC_HASP_SERVER]
-    infobase:
-      type: file
-      seed: image:/opt/onec-ci/base-ib/1Cv8.1CD
-      user: Администратор
+profiles:  # Профили окружения и подключений к ИБ.
+  file:  # Профиль с файловой информационной базой.
+    executor:  # Среда выполнения команд v8-runner.
+      type: docker  # Команды запускаются в контейнере Docker.
+      image: ${CI_IMAGE}  # Образ контейнера берётся из переменной окружения.
+      env: [ONEC_HASP_SERVER]  # Переменная сервера лицензирования передаётся в контейнер.
+    infobase:  # Подключение и исходные данные информационной базы.
+      type: file  # Используется файловая ИБ.
+      seed: image:/opt/onec-ci/base-ib/1Cv8.1CD  # Исходный образ ИБ внутри контейнера.
+      user: Администратор  # Пользователь 1С для подключения к ИБ.
 
-  server:
-    executor:
-      type: docker
-      image: ${CI_IMAGE}
-    infobase:
-      type: server
-      seed: image:/opt/onec-ci/base-ib/base.dt
-      server: ${Server1C}
-      user: ${ServerUser1C}
-      password: ${ServerPassword1C}
-      dbms:
-        kind: postgresql
-        server: ${ServerPG}
-        user: ${ServerUserPG}
-        password: ${ServerPasswordPG}
-      databases:
-        prepare: otus_jenkins_example_ci_prepare
-        yaxunit: otus_jenkins_example_ci_yaxunit
-        va: otus_jenkins_example_ci_va
-      locks:
-        mode: local
-        root: build/v8-ci/server-locks
-        timeout: 30m
+  server:  # Профиль с серверной информационной базой.
+    executor:  # Среда выполнения команд v8-runner.
+      type: docker  # Команды запускаются в контейнере Docker.
+      image: ${CI_IMAGE}  # Образ контейнера берётся из переменной окружения.
+    infobase:  # Подключение и исходные данные информационной базы.
+      type: server  # Используется серверная ИБ.
+      seed: image:/opt/onec-ci/base-ib/base.dt  # Исходный образ ИБ внутри контейнера.
+      server: ${Server1C}  # Адрес сервера 1С из переменной окружения.
+      user: ${ServerUser1C}  # Пользователь 1С для подключения к ИБ.
+      password: ${ServerPassword1C}  # Пароль пользователя 1С из переменной окружения.
+      dbms:  # Параметры СУБД для серверной ИБ.
+        kind: postgresql  # Тип используемой СУБД.
+        server: ${ServerPG}  # Адрес сервера СУБД из переменной окружения.
+        user: ${ServerUserPG}  # Пользователь СУБД из переменной окружения.
+        password: ${ServerPasswordPG}  # Пароль СУБД из переменной окружения.
+      databases:  # Отдельные базы для этапов конвейера.
+        prepare: otus_jenkins_example_ci_prepare  # Имя базы для этапа подготовки.
+        yaxunit: otus_jenkins_example_ci_yaxunit  # Имя базы для тестов YAxUnit.
+        va: otus_jenkins_example_ci_va  # Имя базы для тестов Vanessa Automation.
+      locks:  # Блокировка параллельной работы с базами.
+        mode: local  # Блокировки хранятся локально.
+        root: build/v8-ci/server-locks  # Каталог файлов блокировок.
+        timeout: 30m  # Максимальное ожидание освобождения блокировки.
 
-cleanup:
-  enabled: true
-  timeout: 5m
+cleanup:  # Параметры очистки временных данных ИБ.
+  # Удаляются только зарегистрированные временные данные ИБ текущего запуска:
+  # staging/*/1Cv8.1CD, prepared/1Cv8.1CD или prepared/prepared.dt,
+  # каталоги steps/.../infobase и ibcmd-data. Отчёты, CF и логи сохраняются.
+  enabled: true  # Удалять временные данные ИБ и освобождать резервирование запуска.
+  timeout: 5m  # Максимальная длительность очистки.
 
-pipelines:
-  ci:
-    - step: v8.prepare
-      timeout: 6m
-    - step: v8.test.yaxunit
-      timeout: 4m
-      retry: 1
-    - step: v8.test.va
-      timeout: 6m
-      retry: 1
-    - v8.cleanup
+pipelines:  # Именованные последовательности этапов.
+  ci:  # Конвейер ci, запускаемый по имени.
+    - step: v8.prepare  # Подготовить рабочую информационную базу.
+      timeout: 6m  # Внешний лимит выполнения этапа v8.prepare.
+    - step: v8.test.yaxunit  # Выполнить модульные тесты YAxUnit.
+      timeout: 4m  # Внешний лимит выполнения этапа v8.test.yaxunit.
+      retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
+    - step: v8.test.va  # Выполнить сценарии Vanessa Automation.
+      timeout: 6m  # Лимит выполнения этапа v8.test.va.
+      retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
+    - v8.cleanup  # Удалить временные данные ИБ запуска и освободить резервирование.
 
-  ci-full:
-    - step: v8.prepare
-      timeout: 6m
-    - step: v8.test.yaxunit
-      timeout: 4m
-      retry: 1
-    - step: v8.test.va
-      timeout: 6m
-      retry: 1
-    - v8.cleanup
+  ci-full:  # Конвейер ci-full, запускаемый по имени.
+    - step: v8.prepare  # Подготовить рабочую информационную базу.
+      timeout: 6m  # Внешний лимит выполнения этапа v8.prepare.
+    - step: v8.test.yaxunit  # Выполнить модульные тесты YAxUnit.
+      timeout: 4m  # Внешний лимит выполнения этапа v8.test.yaxunit.
+      retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
+    - step: v8.test.va  # Выполнить сценарии Vanessa Automation.
+      timeout: 6m  # Лимит выполнения этапа v8.test.va.
+      retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
+    - v8.cleanup  # Удалить временные данные ИБ запуска и освободить резервирование.
   
-  release:
-    - step: v8.prepare
-      timeout: 6m
-    - step: v8.make.cf
-      timeout: 6m
-    - v8.cleanup
+  release:  # Конвейер release, запускаемый по имени.
+    - step: v8.prepare  # Подготовить рабочую информационную базу.
+      timeout: 6m  # Внешний лимит выполнения этапа v8.prepare.
+    - step: v8.make.cf  # Собрать файл конфигурации CF.
+      timeout: 6m  # Внешний лимит выполнения этапа v8.make.cf.
+    - v8.cleanup  # Удалить временные данные ИБ запуска и освободить резервирование.
