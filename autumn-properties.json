@@ -1,0 +1,54 @@
+{
+    "vrunner": {
+        "ibconnection": "/F./build/ib",
+        "db-user": "Администратор",
+        "db-pwd": "",
+        "root": ".",
+        "workspace": ".",
+        "v8version": "8.5",
+        "locale": "ru",
+        "language": "ru",
+        "additional": "/DisplayAllFunctions /L ru",
+        "ordinaryapp": "-1",
+        "test": {
+            "vanessa": {
+                "vanessasettings": "./tools/VAParams.json",
+                "bddrunner-path": "f:/1C/VA_Tests/vanessa-automation-single.epf",
+                "additional": "/DisplayAllFunctions /L ru /DisableStartupDialogs /DisableStartupMessages /AllowExecuteScheduledJobs -Off"
+            },
+            "xunit": {
+                "xddConfig": "./tools/xUnitParams.json",
+                "reportsxunit": "jUnit{build/out/smoke/junit/junit.xml};allure{build/out/smoke/allure/allure.xml}",
+                "xddExitCodePath": "./build/xddExitCodePath.txt",
+                "additional": "/DisplayAllFunctions /L ru /DisableStartupDialogs /DisableStartupMessages /AllowExecuteScheduledJobs -Off"
+            },
+            "yaxunit": {
+                "yaxunit-config": "tools/yaxunit.json",
+                "report-format": [
+                    "junit"
+                ],
+                "report-path": "build/out/yaxunit/junit.xml",
+                "additional": "/DisplayAllFunctions /L ru /DisableStartupDialogs /DisableStartupMessages /AllowExecuteScheduledJobs -Off"
+            }
+        },
+        "validate": {
+            "syntax-check": {
+                "groupbymetadata": true,
+                "exception-file": "tools/syntax-check-excludes.txt",
+                "report-format": [
+                    "junit",
+                    "allure"
+                ],
+                "report-path": "build/out/syntax-check",
+                "mode": [
+                    "ExtendedModulesCheck",
+                    "ThinClient",
+                    "WebClient",
+                    "Server",
+                    "ExternalConnection",
+                    "ThickClientOrdinaryApplication"
+                ]
+            }
+        }
+    }
+}

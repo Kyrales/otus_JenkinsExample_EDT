@@ -1,0 +1,5 @@
+{
+    "$schema": "https://raw.githubusercontent.com/yellow-hammer/vscode-1c-platform-tools/main/resources/schemas/pipelines.schema.json",
+    "version": 2,
+    "pipelines": []
+}

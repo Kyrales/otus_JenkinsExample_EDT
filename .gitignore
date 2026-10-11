@@ -8,3 +8,4 @@ build
 out
 .scannerwork
 v8project.local.yaml
+.v8-ci/
