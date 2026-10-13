@@ -185,7 +185,6 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
-  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
   <compatibilityMode>8.3.27</compatibilityMode>
   <defaultConstantsForm>CommonForm.ОбщиеНастройки</defaultConstantsForm>
   <languages uuid="d5fb342e-0c73-4410-8517-8ce7ee20e8bd">
