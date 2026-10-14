@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1bf2b12-899e-4d60-a8df-63f194c6caa3">
+  <producedTypes>
+    <managerType typeId="405bf7ae-a4a4-4e62-afcf-b1cf87d1f65a" valueTypeId="67da3202-e135-4bd6-a476-158df20f7dce"/>
+    <valueManagerType typeId="fdeb853f-03c3-4a5b-a19f-3086a8375e21" valueTypeId="45c45e0f-cce6-49a9-b718-14c151936e7c"/>
+    <valueKeyType typeId="164a5526-0b44-44b5-b3ee-5d7ca1081ffe" valueTypeId="c1fcea81-f344-4230-b3fe-7681b875dd3a"/>
+  </producedTypes>
+  <name>ПутьКФайлуНастроекDaData</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь к файлу настроек DaData</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

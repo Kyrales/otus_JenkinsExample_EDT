@@ -176,6 +176,7 @@
   <commonModules>CommonModule.ЮТЧитательСлужебныйВызовСервера</commonModules>
   <commonModules>CommonModule.ЮТЧитательСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ОМ_ПараметрыЗапускаCI</commonModules>
+  <commonModules>CommonModule.ОМ_DaDataКонтрагенты</commonModules>
   <dataProcessors>DataProcessor.ЮТHTTPServiceRequest</dataProcessors>
   <dataProcessors>DataProcessor.ЮТHTTPОтвет</dataProcessors>
   <dataProcessors>DataProcessor.ЮТHTTPСервисЗапрос</dataProcessors>
@@ -193,4 +194,5 @@
   <dataProcessors>DataProcessor.ЮТРедакторТестов</dataProcessors>
   <dataProcessors>DataProcessor.ЮТСообщениеСервисаИнтеграции</dataProcessors>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
+  <dataProcessors>DataProcessor.ОМ_DaDataТранспорт</dataProcessors>
 </mdclass:Configuration>

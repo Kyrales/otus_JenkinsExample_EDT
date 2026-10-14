@@ -263,6 +263,7 @@
   <commonModules>CommonModule.УведомленияСервер</commonModules>
   <commonModules>CommonModule.ВходящийЗапросПоделитьсяКлиент</commonModules>
   <commonModules>CommonModule.API_ОписанияТоваров</commonModules>
+  <commonModules>CommonModule.DaDataКонтрагенты</commonModules>
   <exchangePlans>ExchangePlan.Мобильные</exchangePlans>
   <xDTOPackages>XDTOPackage.ОбменСМобильнымУстройством</xDTOPackages>
   <webServices>WebService.MAExchange</webServices>
@@ -339,6 +340,7 @@
   <constants>Constant.ТолькоЗащищеннаяАутентификацияPOP3</constants>
   <constants>Constant.ТолькоЗащищеннаяАутентификацияSMTP</constants>
   <constants>Constant.УчетПоСкладам</constants>
+  <constants>Constant.ПутьКФайлуНастроекDaData</constants>
   <commonForms>CommonForm.ОбщиеНастройки</commonForms>
   <commonForms>CommonForm.НастройкиМобильногоУстройства</commonForms>
   <commonForms>CommonForm.НастройкаПочты</commonForms>

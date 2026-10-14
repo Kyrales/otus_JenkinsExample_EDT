@@ -2,13 +2,13 @@
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormGroup">
     <name>ГруппаОсновные</name>
-    <id>16</id>
+    <id>130</id>
     <items xsi:type="form:FormGroup">
       <name>ОсновноеЛевая</name>
       <id>39</id>
       <items xsi:type="form:FormField">
         <name>Наименование</name>
-        <id>3</id>
+        <id>125</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -48,8 +48,82 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
+        <name>ИНН</name>
+        <id>118</id>
+        <title>
+          <key>ru</key>
+          <value>ИНН</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ИНН</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ИННРасширеннаяПодсказка</name>
+          <id>120</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИННКонтекстноеМеню</name>
+          <id>119</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ЗаполнитьПоИНН</name>
+        <id>121</id>
+        <title>
+          <key>ru</key>
+          <value>Заполнить по ИНН</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ЗаполнитьПоИННРасширеннаяПодсказка</name>
+          <id>122</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.ЗаполнитьПоИНН</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:FormField">
         <name>Родитель</name>
-        <id>4</id>
+        <id>127</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -92,7 +166,7 @@
         <id>78</id>
         <items xsi:type="form:FormField">
           <name>ВидЦен</name>
-          <id>15</id>
+          <id>131</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -230,7 +304,7 @@
       <id>38</id>
       <items xsi:type="form:FormField">
         <name>Код</name>
-        <id>2</id>
+        <id>123</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -332,7 +406,7 @@
       <id>17</id>
       <items xsi:type="form:FormField">
         <name>Регион</name>
-        <id>5</id>
+        <id>140</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -372,7 +446,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Страна</name>
-        <id>6</id>
+        <id>139</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -412,7 +486,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Город</name>
-        <id>8</id>
+        <id>137</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -452,7 +526,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Улица</name>
-        <id>14</id>
+        <id>132</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -492,7 +566,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Дом</name>
-        <id>9</id>
+        <id>136</id>
         <title>
           <key>ru</key>
           <value>Дом (стр.)</value>
@@ -536,7 +610,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>Индекс</name>
-        <id>7</id>
+        <id>138</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -655,7 +729,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>ЭлектроннаяПочта</name>
-        <id>11</id>
+        <id>134</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -699,7 +773,7 @@
       </items>
       <items xsi:type="form:FormField">
         <name>ВебСайт</name>
-        <id>13</id>
+        <id>129</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -745,7 +819,7 @@
           <id>106</id>
           <items xsi:type="form:FormField">
             <name>Телефон</name>
-            <id>10</id>
+            <id>135</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -869,7 +943,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>Факс</name>
-          <id>12</id>
+          <id>133</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1660,7 +1734,7 @@
   <showCloseButton>true</showCloseButton>
   <attributes>
     <name>Объект</name>
-    <id>1</id>
+    <id>76</id>
     <valueType>
       <types>CatalogObject.Контрагенты</types>
     </valueType>
@@ -1679,7 +1753,7 @@
       <key>ru</key>
       <value>Таблица сертификатов криптографии</value>
     </title>
-    <id>2</id>
+    <id>124</id>
     <valueType>
       <types>ValueTable</types>
     </valueType>
@@ -1695,7 +1769,7 @@
         <key>ru</key>
         <value>Представление сертификата криптографии</value>
       </title>
-      <id>1</id>
+      <id>77</id>
       <valueType>
         <types>String</types>
         <stringQualifiers/>
@@ -1714,7 +1788,7 @@
       <key>ru</key>
       <value>Идентификатор пользователя системы взаимодействия</value>
     </title>
-    <id>3</id>
+    <id>126</id>
     <valueType/>
     <view>
       <common>true</common>
@@ -1729,7 +1803,7 @@
       <key>ru</key>
       <value>Электронная почта содержит ошибку</value>
     </title>
-    <id>4</id>
+    <id>128</id>
     <valueType>
       <types>Boolean</types>
     </valueType>
@@ -2057,6 +2131,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>Видеозвонок</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьПоИНН</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить по ИНН</value>
+    </title>
+    <id>16</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаполнитьПоИНН</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

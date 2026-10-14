@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fc4b248-0664-4176-94fb-fcdafd6060f0">
+  <producedTypes>
+    <objectType typeId="dc017b53-a2b1-409b-8f09-66cf3abfc7f6" valueTypeId="a44ac33b-4d11-4215-9be7-587f1aab20fd"/>
+    <managerType typeId="4a3fa324-3be7-47c7-828c-8a3377eaa1c1" valueTypeId="d7822b4c-f8e8-4dc4-b971-2c2e071e91a9"/>
+  </producedTypes>
+  <name>ОМ_DaDataТранспорт</name>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="6634c78b-af9a-4131-9bed-1bcddd29710b">
+    <name>КодHTTP</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="d028c42e-ece8-48b5-baf3-6d3e92e58d63">
+    <name>Тело</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="6d4aed94-a92a-4cac-a683-d700b5bd77e4">
+    <name>ТекстИсключения</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+</mdclass:DataProcessor>
