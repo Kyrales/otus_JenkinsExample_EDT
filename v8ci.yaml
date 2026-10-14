@@ -31,6 +31,30 @@ profiles:  # Профили окружения и подключений к ИБ
       databases:  # Отдельные базы для этапов конвейера.
         prepare: otus_jenkins_example_ci_prepare  # Имя базы для этапа подготовки.
         yaxunit: otus_jenkins_example_ci_yaxunit  # Имя базы для тестов YAxUnit.
+        va: "otus_jenkins_example_ci_va,otus_jenkins_example_ci_va2"  # Имя базы для тестов Vanessa Automation.
+      locks:  # Блокировка параллельной работы с базами.
+        mode: local  # Блокировки хранятся локально.
+        root: build/v8-ci/server-locks  # Каталог файлов блокировок.
+        timeout: 30m  # Максимальное ожидание освобождения блокировки.
+
+  server-single:  # Профиль с серверной информационной базой.
+    executor:  # Среда выполнения команд v8-runner.
+      type: docker  # Команды запускаются в контейнере Docker.
+      image: ${CI_IMAGE}  # Образ контейнера берётся из переменной окружения.
+    infobase:  # Подключение и исходные данные информационной базы.
+      type: server  # Используется серверная ИБ.
+      seed: image:/opt/onec-ci/base-ib/base.dt  # Исходный образ ИБ внутри контейнера.
+      server: ${Server1C}  # Адрес сервера 1С из переменной окружения.
+      user: ${ServerUser1C}  # Пользователь 1С для подключения к ИБ.
+      password: ${ServerPassword1C}  # Пароль пользователя 1С из переменной окружения.
+      dbms:  # Параметры СУБД для серверной ИБ.
+        kind: postgresql  # Тип используемой СУБД.
+        server: ${ServerPG}  # Адрес сервера СУБД из переменной окружения.
+        user: ${ServerUserPG}  # Пользователь СУБД из переменной окружения.
+        password: ${ServerPasswordPG}  # Пароль СУБД из переменной окружения.
+      databases:  # Отдельные базы для этапов конвейера.
+        prepare: otus_jenkins_example_ci_prepare  # Имя базы для этапа подготовки.
+        yaxunit: otus_jenkins_example_ci_yaxunit  # Имя базы для тестов YAxUnit.
         va: otus_jenkins_example_ci_va  # Имя базы для тестов Vanessa Automation.
       locks:  # Блокировка параллельной работы с базами.
         mode: local  # Блокировки хранятся локально.
@@ -56,7 +80,7 @@ pipelines:  # Именованные последовательности эта
       retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
     - v8.cleanup  # Удалить временные данные ИБ запуска и освободить резервирование.
 
-  ci-full:  # Конвейер ci-full, запускаемый по имени.
+  ci-parallel:  # Конвейер с параллельным запуском va
     - step: v8.prepare  # Подготовить рабочую информационную базу.
       timeout: 8m  # Внешний лимит выполнения этапа v8.prepare.
     - step: v8.test.yaxunit  # Выполнить модульные тесты YAxUnit.
@@ -65,7 +89,12 @@ pipelines:  # Именованные последовательности эта
     - step: v8.test.va  # Выполнить сценарии Vanessa Automation.
       timeout: 6m  # Лимит выполнения этапа v8.test.va.
       retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
-    - v8.cleanup  # Удалить временные данные ИБ запуска и освободить резервирование.
+      tag: "Поступление1"
+    - step: v8.test.va  # Выполнить сценарии Vanessa Automation.
+      timeout: 6m  # Лимит выполнения этапа v8.test.va.
+      retry: 1  # Не более одной дополнительной попытки по политике v8-ci.
+      tag: "Поступление2"
+    - {"step":"v8.cleanup"}  # Удалить временные данные ИБ запуска и освободить резервирование.
   
   release:  # Конвейер release, запускаемый по имени.
     - step: v8.prepare  # Подготовить рабочую информационную базу.
