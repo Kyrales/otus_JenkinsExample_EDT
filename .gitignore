@@ -9,3 +9,6 @@ out
 .scannerwork
 v8project.local.yaml
 .v8-ci/
+autumn-properties.json
+.1cpt/
+.codex/
